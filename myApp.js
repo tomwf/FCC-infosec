@@ -9,7 +9,7 @@ app.use(helmet.xssFilter());
 app.use(helmet.noSniff());
 app.use(helmet.ieNoOpen());
 app.use(helmet.hsts({ maxAge: ninetyDaysInSeconds, force: true }));
-app.use(helmet.dnsPrefetchControl({ allow: true }))
+app.use(helmet.dnsPrefetchControl())
 
 
 
